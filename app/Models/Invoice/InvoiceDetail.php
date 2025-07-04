@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models\Invoice;
+namespace App\Models\invoice;
 
 use Illuminate\Database\Eloquent\Model;
 
-class InvoiceDetail extends Model
+class invoiceDetail extends Model
 {
     //
 }
