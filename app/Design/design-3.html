@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Invoice</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background: #f4f8fb;
+      padding: 40px;
+    }
+    .invoice-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      background: #999;
+      border-radius: 50%;
+      color: white;
+      text-align: center;
+      line-height: 60px;
+      font-size: 18px;
+    }
+    .wave {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 150px;
+      background: linear-gradient(135deg, #007bff 30%, #00c6ff 70%);
+      clip-path: polygon(0 70%, 100% 30%, 100% 100%, 0% 100%);
+    }
+    .signature {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 32px;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="invoice-box position-relative">
+    <div class="d-flex justify-content-between align-items-start mb-4">
+      <div>
+        <h2 class="fw-bold text-primary">John Smith</h2>
+        <p class="mb-0">4490 Oak Drive</p>
+        <p>Albany, NY 12210</p>
+      </div>
+      <div class="logo">LOGO</div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col">
+        <h6 class="fw-bold">Bill To</h6>
+        <p class="mb-0">Jessie M Horne</p>
+        <p class="mb-0">4312 Wood Road</p>
+        <p>New York, NY 10031</p>
+      </div>
+      <div class="col">
+        <h6 class="fw-bold">Ship To</h6>
+        <p class="mb-0">Jessie M Horne</p>
+        <p class="mb-0">2019 Redbud Drive</p>
+        <p>New York, NY 10011</p>
+      </div>
+      <div class="col">
+        <p><strong>Invoice #</strong> INT-001</p>
+        <p><strong>Invoice Date:</strong> 11/02/2019</p>
+        <p><strong>P.O.#</strong> 2412/2019</p>
+        <p><strong>Due Date:</strong> 26/02/2019</p>
+      </div>
+    </div>
+
+    <table class="table table-bordered">
+      <thead class="table-primary">
+        <tr>
+          <th>Qty</th>
+          <th>Description</th>
+          <th>Unit Price</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Front and rear brake cables</td>
+          <td>$100.00</td>
+          <td>$100.00</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>New set of pedal arms</td>
+          <td>$25.00</td>
+          <td>$50.00</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Labor 3hrs</td>
+          <td>$15.00</td>
+          <td>$45.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="text-end">
+      <p><strong>Subtotal:</strong> $195.00</p>
+      <p><strong>Sales Tax 5%:</strong> $9.75</p>
+      <h5 class="text-primary">Invoice Total: $204.75</h5>
+    </div>
+
+    <div class="text-end my-4">
+      <div class="signature">John Smith</div>
+    </div>
+
+    <div>
+      <h6 class="fw-bold">Terms & Conditions</h6>
+      <p>Payment is due within 15 days</p>
+      <p class="mb-0">Name of Bank</p>
+      <p class="mb-0">Account number: 1234567890</p>
+      <p>Routing: 098765432</p>
+    </div>
+
+    <div class="wave"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

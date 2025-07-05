@@ -17,7 +17,7 @@
             max-height: 70px;
             margin-bottom: 20px;
         }
-        .header {
+        .invoice-header {
             border-bottom: 2px solid #007bff;
             margin-bottom: 30px;
             padding-bottom: 15px;
@@ -60,7 +60,7 @@
     </style>
      <div class="invoice-container">
         <!-- Header with Logo -->
-        <div class="header">
+        <div class="invoice-header">
             <div class="row">
                 <div class="col-md-6">
                     <img src="https://via.placeholder.com/200x70?text=ExchangePro" alt="ExchangePro Logo" class="logo">

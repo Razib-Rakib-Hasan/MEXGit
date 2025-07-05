@@ -24,7 +24,7 @@ class InvoiceController extends Controller
         ->select('i.id','i.created_at','i.invoice_total','i.payment_term','c.name as customer')
         ->get();
 
-            return json_encode(['invoices'=>$invoices]);
+            return json_encode(array('hello'=> $invoices));
     }
 
     /**

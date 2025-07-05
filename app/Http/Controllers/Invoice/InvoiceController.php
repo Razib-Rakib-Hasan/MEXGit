@@ -25,7 +25,7 @@ class InvoiceController extends Controller
         $customers=Customer::all();
         $products=Product::all();
 
-        return view('pages.Sales.Invoice.invoice.create',['customers'=>$customers,'products'=>$products]);
+        return view('pages.Sales.Invoice.create',['customers'=>$customers,'products'=>$products]);
     }
 
     /**

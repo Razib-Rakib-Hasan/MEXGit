@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\api\inventory\invoiceController;
+use App\Http\Controllers\api\Invoice\InvoiceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -9,4 +9,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::apiResources(["invoices"=> invoiceController::class]);
+Route::apiResources(["invoices"=> InvoiceController::class]);
